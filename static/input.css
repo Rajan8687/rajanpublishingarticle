@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+.title{
+  @apply text-6xl font-semibold tracking-tight;
+}
+
+.subtitle{
+  @apply text-4xl font-semibold tracking-tight;
+}
+@layer components {
+  .button {
+    @apply font-medium px-4 py-2 rounded-md;
+  }
+
+  @theme {
+    --inset-shadow-underline: inset 0 -2px 0 0;
+  }
+
+  .primary {
+    @apply font-medium px-4 py-2 rounded-md shadow-sm border border-emerald-700 text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 text-xl font-[Open_Sans];
+  }
+
+  .secondary {
+    @apply font-medium px-4 py-2 rounded-md text-xl font-[Open_Sans] border border-gray-300 text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+
+  .danger {
+    @apply font-medium px-4 py-2 rounded-md text-xl font-[Open_Sans] border border-red-400 text-red-800 bg-red-200 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-200 focus:ring-offset-2;
+  }
+}
+.EasyMDEContainer , textarea{
+  @apply rounded-md border-gray-200 border-2 text-base leading-6;
+}
+.EasyMDEContainer .CodeMirror{
+  @apply !border-none !bg-inherit;
+}
+
+.EasyMDEContainer:has(textarea:focus), textarea:focus{
+  @apply ring-1 ring-emerald-500 border-emerald-500
+}
+.form-field input{
+  @apply w-full rounded-md p-2;
+}
+
+.error{
+  @apply p-2 my-2 text-sm text-red-700 bg-red-50 rounded-md border-red-300 border;
+}
+details > summary::-webkit-details-marker{
+  display: none;
+}
+
+input[type="radio"]{
+  @apply text-emerald-600 ml-1 h-4 w-4 focus:ring-emerald-500;
+}
+
+.allauth-form input[type="email"]{
+  @apply w-full rounded-md text-black;
+}
+
+.allauth-form p:has(input[type="email"]){
+  @apply text-left;
+}
+
+.allauth-form p:has(input[type="email"]) label {
+  @apply font-bold;
+}
+.article-status-draft{
+  @apply bg-gray-200;
+}
+.article-status-published{
+  @apply bg-green-200;
+}
+.article-status-inprogress{
+  @apply bg-amber-200;
+}
