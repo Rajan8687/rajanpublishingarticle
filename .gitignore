@@ -1,6 +1,56 @@
-node_modules
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 *.pyc
-staticfiles/
-templates/
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Django
+db.sqlite3
+*.sqlite3
+*.log
+
+# Environment variables
 .env
+
+# Static files
+staticfiles/
+static_root/
+
+# Node / Tailwind / JS
+node_modules/
+*.lock
+tailwind.config.js
+package-lock.json
+
+# VS Code
+.vscode/
+
+# Byte-compiled / cache
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Docker
+.dockerignore
+
+# Compiled files
+*.sass-cache
+*.css.map
+
+# Poetry
+poetry.lock
+
+# Others
+.DS_Storecl

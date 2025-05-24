@@ -1,0 +1,26 @@
+asgiref==3.8.1
+certifi==2025.4.26
+cffi==1.17.1
+charset-normalizer==3.4.1
+cryptography==44.0.2
+dj-database-url==2.3.0
+Django==5.2
+django-allauth==65.7.0
+django-anymail==13.0
+django-browser-reload==1.18.0
+django-widget-tweaks==1.5.0
+-e git+https://github.com/Rajan8687/rajanpublishingarticle.git@393cd812bb8bbd95756713756ad7e69ea95da857#egg=djangocourse
+dotenv==0.9.9
+idna==3.10
+oauthlib==3.2.2
+psycopg==3.2.6
+psycopg2-binary==2.9.10
+pycparser==2.22
+PyJWT==2.10.1
+python-dotenv==1.1.0
+requests==2.32.3
+requests-oauthlib==2.0.0
+sqlparse==0.5.3
+typing_extensions==4.13.2
+urllib3==2.4.0
+whitenoise==6.9.0
