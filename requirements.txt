@@ -9,10 +9,12 @@ django-allauth==65.7.0
 django-anymail==13.0
 django-browser-reload==1.18.0
 django-widget-tweaks==1.5.0
--e git+https://github.com/Rajan8687/rajanpublishingarticle.git@393cd812bb8bbd95756713756ad7e69ea95da857#egg=djangocourse
+-e git+https://github.com/Rajan8687/rajanpublishingarticle.git@315054e62b42868e2d54f1bbc90b4be1c2363b48#egg=djangocourse
 dotenv==0.9.9
+gunicorn==23.0.0
 idna==3.10
 oauthlib==3.2.2
+packaging==25.0
 psycopg==3.2.6
 psycopg2-binary==2.9.10
 pycparser==2.22
