@@ -154,7 +154,6 @@ EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
 # settings.py
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-
 LOGIN_REDIRECT_URL="home"
 
 LOGOUT_REDIRECT_URL="account_login"
