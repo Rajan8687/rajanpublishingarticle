@@ -117,7 +117,6 @@ import dj_database_url # type: ignore
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
 
-
 #Customize user model
 AUTH_USER_MODEL ='app.UserProfile'
 
